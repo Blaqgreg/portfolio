@@ -825,4 +825,27 @@ Header Section Starts
         color: var(--black);
     }
     
-}
+}/* Responsive styles for larger screens */
+  @media (min-width: 768px) {
+    .weather-info {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1200px;
+    }
+  
+    .weather-info .card {
+      width: 30%;
+      margin: 10px;
+    }
+  }
+  
+  /* Responsive typography */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
